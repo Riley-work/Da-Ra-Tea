@@ -22,7 +22,7 @@ export class AppComponent {
   getValue(myvalue:any) {
     console.log = myvalue.target.value;
   }
-  defaultV:string ='type here';
+  defaultV:string ='type here....';
 
   public display = false;
   
