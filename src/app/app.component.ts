@@ -13,7 +13,6 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'Da-Ra-Tea';
   firstName = 'Damini';
-  imagepath="assests/thu/jpg";
 
   passValueToComponent(e:any) {
     console.log(e.target.value);
