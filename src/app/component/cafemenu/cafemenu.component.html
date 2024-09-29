@@ -1,0 +1,6 @@
+<h2>Café Menu</h2>
+<ul>
+  <li *ngFor="let item of cafeItems">
+    {{ item.name }} - {{ item.price | currency:'INR':'symbol' }}
+</li>
+</ul>

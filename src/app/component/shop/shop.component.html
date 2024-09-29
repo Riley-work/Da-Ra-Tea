@@ -1,0 +1,10 @@
+<!--both event and Two way binding another example-->
+<h3>Enter Promo</h3>
+<input [(ngModel)]="promocode" (ngModelChange)="checkPromocode()" placeholder="Enter Code" /> <!--ngmodelchange that triggers an event whenever the value of an input element changes-->
+
+<!-- ngIf -->
+<p *ngIf="ispromocode">Hurray 10% Discount</p> <!--checking promocode in ts it will check in promocode array -->
+<p *ngIf="!ispromocode && promocode">Enter Valid Code</p>
+
+<!--EVent Binding-->
+<button (click)="addToCart()">Add to Cart</button> <!--EVent Binding-->
